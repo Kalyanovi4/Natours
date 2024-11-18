@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
 process.on('uncaughtException', err => {
@@ -15,9 +15,7 @@ const DB = process.env.DATABASE.replace(
   process.env.DATABASE_PASSWORD
 );
 
-mongoose
-  .connect(DB, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('DB connections successful!'));
+mongoose.connect(DB).then(() => console.log('DB connections successful!'));
 
 const port = process.env.port || 3000;
 const server = app.listen(port, () => {
