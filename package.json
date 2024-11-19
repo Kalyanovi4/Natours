@@ -4,8 +4,8 @@
   "description": "Learning node, express, mongoDB",
   "main": "app.js",
   "scripts": {
-    "start": "node --env-file=config.env server.js -p $PORT",
-    "dev": "nodemon --env-file=config.env server.js server.js",
+    "start": "node server.js  -p $PORT",
+    "dev": "nodemon server.js",
     "debug": "ndb server.js",
     "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js --public-url /",
     "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js --public-url /"
