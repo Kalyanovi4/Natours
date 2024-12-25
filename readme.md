@@ -1,6 +1,9 @@
 # Natours Application
 
-Built using modern technologies: node.js, express, mongoDB, mongoose
+Application for booking tours.
+
+Built using such technologies: node.js, express, mongoDB, mongoose, stripe, JWT, included map using mapbox, uploading images with multer,
+sending emails using nodemailer.
 
 For testing purposes:
 
